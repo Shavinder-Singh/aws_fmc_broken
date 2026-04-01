@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    font-family: 'Orbitron sans-serif;
+    background: linear-gradient(120deg, #2c20b9, #2d0474 #642c56);
+    color: white;
+    background:
+        radial-gradient(60% 60% at 15% 25%, #2c20b9, transparent 70%)
+        radial-gradient(65% 65% at 85% 30%, #2d0474, transparent 72%),
+        radial-gradient(70% 70% at 50% 80%, #642c56, transparent 75%),
+        linear-gradient(135deg #051149a2 #3a1c6e, #6a2c91)
+
+    background-blend-mode: soft-light;
+    animation: auroraFlow 2s ease-in-out infinite;
+
+
+    @keyframes auroraFlow {
+        0%   { background-position: 0% 0%, 100% 0%, 50% 100%, 0% 50%; }
+        50%  { background-position: 25% 20%, 75% 35%, 50% 65%, 100% 50%; }
+        100% { background-position: 0% 0%, 100% 0%, 50% 100%, 0% 50%; }
+    }
+}
+
+.container {
+    display: flex
+    justify-content center;
+    align-items: center;
+    height: 100vh
+
+
+.card {
+    background: rgba(255,255,255,0.08);
+    padding: 30px;
+    border-radius: 15px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 25px rgba(0,0,0,0.6)
+    width: 320px;
+}
+
+input {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #00c6ff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #0072ff;
+}
+
+#error {
+    colour: red;
+    margin-top: 10px;
+}
+
